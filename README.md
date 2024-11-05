@@ -85,7 +85,7 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
-https://youtu.be/Y_Wy2cm3rI0
+https://youtube.com/shorts/Y_Wy2cm3rI0
 
 Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
 
