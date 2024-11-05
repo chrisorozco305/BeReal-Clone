@@ -5,7 +5,6 @@
 //  Created by Charlie Hieger on 11/1/22.
 //
 
-import ParseSwift
 import UIKit
 
 // TODO: Pt 1 - Import Parse Swift
@@ -57,14 +56,6 @@ class SignUpViewController: UIViewController {
                 self?.showAlert(description: error.localizedDescription)
             }
         }
-
-    }
-
-    private func showAlert(description: String?) {
-        let alertController = UIAlertController(title: "Unable to Sign Up", message: description ?? "Unknown error", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(action)
-        present(alertController, animated: true)
     }
 
     private func showMissingFieldsAlert() {

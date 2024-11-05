@@ -23,6 +23,7 @@
 		CB7896F12936045A00635932 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7896F02936045A00635932 /* Post.swift */; };
 		CB7896F429361CC600635932 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CB7896F329361CC600635932 /* AlamofireImage */; };
 		CBCDFAFE291144DA001F1CF1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCDFAFD291144DA001F1CF1 /* PostViewController.swift */; };
+		FA6C2DF82CDAA8B200EA41A5 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C2DF72CDAA8B200EA41A5 /* ViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CB7896EE2935DC4E00635932 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB7896F02936045A00635932 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CBCDFAFD291144DA001F1CF1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FA6C2DF72CDAA8B200EA41A5 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Extensions.swift"; path = "../../../../../Users/coroz026/Downloads/lab_6/lab-insta-parse/Extensions/ViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */,
+				FA6C2DF72CDAA8B200EA41A5 /* ViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */,
 				CBCDFAFE291144DA001F1CF1 /* PostViewController.swift in Sources */,
+				FA6C2DF82CDAA8B200EA41A5 /* ViewController+Extensions.swift in Sources */,
 				CB73D399290E3B4A00C12538 /* LoginViewController.swift in Sources */,
 				CB73D395290E3B4A00C12538 /* AppDelegate.swift in Sources */,
 				CB6997532911354B007EDA6B /* FeedViewController.swift in Sources */,

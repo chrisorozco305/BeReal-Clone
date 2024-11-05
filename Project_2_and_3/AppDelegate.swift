@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import ParseSwift
 
 // TODO: Pt 1 - Import Parse Swift
+import ParseSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,31 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // TODO: Pt 1 - Initialize Parse SDK
-        // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
 
+        // Add the following values from your Parse server.
+        // For back4app hosted Parse servers:
+        //   - App Settings tab -> Security & Keys -> App Keys -> applicationId + clientKey
+        //   - App Settings tab -> App Management -> Parse API Address
+        // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
         ParseSwift.initialize(applicationId: "CeLd8oP9Ail6hoKD6aQSYjyuB6sFf83NhdurvD9Y",
                               clientKey: "ovAkVhyjUPrHx29wHySuJT8Z6GmHFRTBfOAmbQh3",
                               serverURL: URL(string: "https://parseapi.back4app.com")!)
 
         // TODO: Pt 1: - Instantiate and save a test parse object to your server
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L121
-        
-        // Instantiate the test parse object
-        var score = GameScore()
-        score.playerName = "Kingsley"
-        score.points = 13
 
-        // Save to your server asynchronously (preferred way) - Performs work on background queue and returns to specified callbackQueue.
-        // If no callbackQueue is specified it returns to main queue.
-        score.save { result in
-            switch result {
-            case .success(let savedScore):
-                print("✅ Parse Object SAVED!: Player: \(String(describing: savedScore.playerName)), Score: \(String(describing: savedScore.points))")
-            case .failure(let error):
-                assertionFailure("Error saving: \(error)")
-            }
-        }
-
+//        var score = GameScore()
+//        score.playerName = "Kingsley"
+//        score.points = 13
+//
+//        // Save asynchronously (preferred way) - Performs work on background queue and returns to specified callbackQueue.
+//        // If no callbackQueue is specified it returns to main queue.
+//        score.save { result in
+//            switch result {
+//            case .success(let savedScore):
+//                print("✅ Parse Object SAVED!: Player: \(String(describing: savedScore.playerName)), Score: \(String(describing: savedScore.points))")
+//            case .failure(let error):
+//                assertionFailure("Error saving: \(error)")
+//            }
+//        }
 
         return true
     }
@@ -64,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // TODO: Pt 1 - Create Test Parse Object
 // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L33
 
-// Create your own value type `ParseObject`.
+// Create your own value typed `ParseObject`.
 struct GameScore: ParseObject {
     // These are required by ParseObject
     var objectId: String?
@@ -84,6 +86,7 @@ struct GameScore: ParseObject {
 // var score = GameScore()
 // score.playerName = "Kingsley"
 // score.points = 13
+
 
 // OR Implement a custom initializer (OPTIONAL i.e. NOT REQUIRED)
 // It's recommended to place custom initializers in an extension

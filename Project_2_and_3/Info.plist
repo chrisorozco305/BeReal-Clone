@@ -21,6 +21,8 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>To take photo</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Filmotype-Jade.otf</string>
