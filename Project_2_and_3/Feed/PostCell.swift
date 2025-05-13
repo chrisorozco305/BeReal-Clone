@@ -2,7 +2,7 @@
 //  PostCell.swift
 //  lab-insta-parse
 //
-//  Created by Charlie Hieger on 11/3/22.
+//  Created by Christian Orozco
 //
 
 import UIKit
