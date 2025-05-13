@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  lab-insta-parse
 //
-//  Created by Christian Orozco on 10/29/24.
+//  Created by Christian Orozco
 //
 
 import UIKit
