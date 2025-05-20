@@ -2,9 +2,9 @@
 
 Submitted by: **Christian Orozco**
 
-**Name of your app** is an app that clones BeReal
+**BeReal Clone** is an app that clones BeReal
 
-Time spent: **2** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
